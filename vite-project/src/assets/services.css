@@ -1,0 +1,32 @@
+.container{
+   background-color: #808080;
+
+}
+.box {
+  background-color: white;
+  border: 1px solid #d1d5db; /* Tailwind's border-gray-300 */
+  margin: 1rem;              /* Equivalent to m-4 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 300px;
+}
+.custom-image {
+  height: 5rem;              /* h-20 = 5rem */
+  width: 5rem;               /* w-20 = 5rem */
+  border-radius: 9999px;     /* rounded-full */
+  margin: 1rem auto;         /* m-4 = 1rem margin on all sides, auto for horizontal center */
+  object-fit: contain;       /* object-contain */
+  border: 1px solid #ef4444; /* border-2 + border-red-500 (#ef4444 is Tailwind's red-500) */
+  padding: 10px;
+  display: block;            /* Ensures mx-auto works in normal CSS */
+  /* height: 200px; */
+}
+.text{ 
+  max-width: 16rem;           /* approximate 2xs size, adjust if needed */
+  /* font-weight: 500; */
+  /* border: 1px solid #d1d5db;  gray-300 as default border color */
+  color: #5e6571;             /* Tailwind's gray-500 */
+
+}

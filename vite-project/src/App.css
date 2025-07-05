@@ -1,0 +1,33 @@
+.book-car-img{
+    position: relative;
+}
+.book-car{
+    position: absolute;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  /* Add your background pattern here */
+  background-color: #ffffff;
+  background-image: radial-gradient(rgba(12, 12, 12, 0.171) 2px, transparent 0);
+  background-size: 30px 30px;
+  background-position: -5px -5px;
+}
+.bx{
+  margin: 10;
+  width: 350px;
+  /* border: 1px solid black; */
+  padding: 20px;
+  height: 450px;
+}
+.text{
+  font-size: large;
+  color: black;
+}
+.textbox{
+  background-color: #e9e7e7;
+  margin-bottom: 10px;
+  /* margin-right: 10px; */
+  width: 19rem;
+  height: 50px;
+}
