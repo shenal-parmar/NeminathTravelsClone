@@ -16,7 +16,12 @@ export const CarDetail = () => {
   // const { carName, carImage, Textfiled1, Textfiled2, Textfiled3, Textfiled4 } =
   //   props.carDetail;
   // console.log("CArdetail", carDetail);
-
+  const handleWhatsAppClick = () => {
+  const phoneNumber = "919876543210"; 
+  const message = encodeURIComponent("Hi, I want to book a taxi.");
+  const url = `https://wa.me/${phoneNumber}?text=${message}`;
+   window.open(url, "_blank");
+};
   return (
    <div>
       <VehicleFleet />

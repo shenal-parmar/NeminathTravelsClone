@@ -5,7 +5,12 @@ export const CarCard = (props) => {
   const { prices, tripName, tripType } = props.carData;
   const { sedanPrice, suvPrice } = props.carData.prices;
   // console.log("price", prices);
-
+const handleWhatsAppClick = () => {
+  const phoneNumber = "919876543210"; 
+  const message = encodeURIComponent("Hi, I want to book a taxi.");
+  const url = `https://wa.me/${phoneNumber}?text=${message}`;
+  window.open(url, "_blank");
+};
   return (
     <div className="bg-gray-50 border-1 border-slate-700  p-2.5 rounded-2xl">
       <h3 className="route text-3xl text-center h-20 font-medium text-orange-600">
@@ -25,7 +30,7 @@ export const CarCard = (props) => {
         </div>
        
       </div>
-      <button className=" rounded-4xl w-full p-2 mt-15  bg-orange-600">
+      <button className=" rounded-4xl w-full p-2 mt-15  bg-orange-600" onClick={handleWhatsAppClick}>
         Book Now
       </button>
     </div>
